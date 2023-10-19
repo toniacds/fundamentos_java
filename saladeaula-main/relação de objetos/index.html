@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body background="./img/fundo.jpg">
+   <center> <h1 class="tipo2">🖥 Relação de objetos 🖥 </h1> 
+    <div class="tipo1">
+      <p>A relação de objetos pode ocorrer de diversas formas como:.</p>
+      <p><li>Objetos que são formados por outros objetos </li></p>
+      <p><li>Objetos que usam outros objetos </li></p>
+      <p><li>	Um programa oo que possui vários objetos que interagem entre si</li></p>
+      <p>Esses objetos podem possuir um relacionamento de: </p></div>
+
+
+      <div class="tipo2">
+        <h3>Associação</h3></div>
+
+      <div class="tipo1">
+      <p> 1.	Associação: objetos podem usar outros objetos, ou seja, eles possuem um relacionamento estrutural que indica que os objetos das classes estão vinculados, mas são independentes. É uma linha sólida conectando duas classes.</p>
+         
+
+      <div class="w3-container">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Exemplo</button>
+      
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <img src="./img/associação.png" width="700" height="500">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tipo2"><h3>Agregação</h3></div>
+    <div class="tipo1">
+      <p> 2.	Agregação: um objeto pode conter outros objetos. Na agregação os objetos são relacionados por um relacionamento parte-todo, onde uma das pontas da associação é a parte é o todo, onde a parte pode existir sem o todo.</p>
+         
+
+      <div class="w3-container">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Exemplo</button>
+      
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <img src="img/agragação.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tipo2"><h3>Composição</h3></div>
+    <div class="tipo1">
+      <p>3.	Composição: um objeto pode ser formado por outros objetos. São usadas para descrever um relacionamento entre objetos onde um objeto é composto de um ou mais objetos. A composição é um relacionamento forte. Os objetos “parte” só podem pertencer a um único objeto “todo” e têm o seu tempo de vida coincidente com o dele. Nesse caso diferentemente da agregação a existência do Objeto-Parte NÃO faz sentido se o Objeto-Todo não existir</p>
+
+      <div class="w3-container">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Exemplo</button>
+      
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <img src="img/composicao.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

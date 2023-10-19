@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body background="./img/fundo.jpg">
+   <center> <h1 class="tipo2"> O que é instanciar </h1> 
+    <div class="tipo1">
+    <p>Uma instância de uma classe é um novo objeto criado dessa classe, com o operador new. Instanciar uma classe é criar um novo objeto do mesmo tipo dessa classe. Uma classe somente poderá ser utilizada após ser instanciada. 
+      Para que possamos entender melhor o processo de instanciação, vamos ver o exemplo abaixo, que usa a classe Pessoa: 
+      </p>
+    
+        <center>
+ 
+          <div class="w3-container">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Exemplo</button>
+          
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <img src="./img/instancia.png" width="700" height="500">
+                </div>
+              </div>
+            </div>
+          </div>
+          </center>
+        <p> Importante ressaltar que se apenas declararmos a classe desta forma: Pessoa objPessoa, não significa que ela foi criada automaticamente. Assim, devemos usar o new nomeClasse(). Uma vez realizada a instanciação, usamos o nomeObjetoCriado.membro para que possamos nos referenciar aos membros do objeto criado (neste caso, às variáveis sexo, nome, idade). 
+          Portanto, para poupar tempo e código declaramos e instanciamos a classe em uma única linha apenas desta forma: Pessoa objPessoa = new Pessoa();. 
+         </p>
+   
+</div>
+
+</body>
+</html>

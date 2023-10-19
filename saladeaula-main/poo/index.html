@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body background="./img/fundo.jpg">
+   <center> <h1 class="tipo2"> O que é Poo? </h1> </center>
+    <div class="tipo1">
+      <p>No mundo da programação, existem muitas formas de se programar, elas são chamadas de
+      paradigmas de programação. Entre elas estão programação orientada a objeto, ou POO. 
+      objetivo da criação do POO foi principalmente de aproximar o manuseio das estruturas de um
+      programa ao manuseio das coisas do mundo real (objeto). Esse paradigma se baseia em dois
+      conceitos chaves: classes e objetos.</p></div>
+
+
+      <center><div class="tipo2"> <h3>Herança </h3> </div></center>
+      <div class="tipo1">
+     
+        <p>A herança é um princípio da POO que permite a criação de novas classes a partir de
+          outras previamente criadas. Essas novas classes são chamadas de subclasses, ou
+          classes derivadas; e as classes já existentes, que deram origem às subclasses, são
+          chamadas de superclasses, ou classes base. Deste modo é possível criar uma
+          hierarquia dessas classes, tornando, assim, classes mais amplas e classes mais
+          específicas. Uma subclasse herda métodos e atributos de sua superclasse; apesar
+          disso, pode escrevê-los novamente para uma forma mais específica de representar o
+          comportamento do método herdado.</p> 
+          <p>Ex: Temos as classes Funcionario e Coordenador que possuem o atributo nome e matrícula em comum. 
+            <center>
+          <div class="w3-container">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Exemplo</button>
+          
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <p></p>
+                  <center><img src="./img/heranca1.png" >
+                    <p></p>
+                  <img src="./img/heranca2.png" width="500" height="" >
+                  <p></p>
+                  <img src="./img/heranca3.png" width="500" height="" ></center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center> 
+</div>
+
+
+<center><div class="tipo2"> <h3>Polimorfismo </h3> </div></center>
+<div class="tipo1">
+
+  <p>Quando trabalhamos com herança e dizemos que uma subclasse PessoaFisica e PessoaJuridica são filhas da super classe Pessoa, podemos então dizer que um PessoaFisica É UMA Pessoa e PessoaJuridica É UMA Pessoa, justamente por ser uma extensão ou tipo mais especificado deste</p> 
+  <center>
+    <div class="w3-container">
+      <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-black">Ilustração</button>
+    
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <p></p>
+            <center><img src="./img/polimor.png" >
+          </div>
+        </div>
+      </div>
+    </div> 
+  </center>
+    <p>Quando trabalhamos com uma variável do tipo Pessoa que é uma super classe, podemos fazer está variável receber um objeto do tipo PessoaFisica ou PessoaJuridica, por exemplo: </p>
+    <center><img src="./img/poilimor2.png" height="100"></center>
+<p> Com isso, podemos dizer que polimorfismo é a capacidade de um objeto ser referenciado de diversas formas diferentes e com isso realizar as mesmas tarefas (ou chamadas de métodos) de diferentes formas. 
+  Um exemplo do uso do polimorfismo utilizando a classe Pessoa, seria todas as subclasses sobrescreverem o método public String getNome(). 
+  </p>
+  <center>
+  <div class="w3-container">
+    <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-black">Exemplo</button>
+  
+    <div id="id03" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <p></p>
+          <center><img src="./img/expoli.png" ></center>
+        </div>
+      </div>
+    </div>
+  </div> 
+</center>
+  <p>Existe dois tipos de polimorfismo: </p>
+<p><li>Polimorfismo Estático ou Sobrecarga: O Polimorfismo Estático se dá quando temos a mesma operação implementada várias vezes na mesma classe.</li></p>
+<p><li>Polimorfismo Dinâmico ou Sobreposição: O Polimorfismo Dinâmico acontece na herança, quando a subclasse sobrepõe o método original.</li> </p>
+</div>
+
+<center><div class="tipo2"> <h3>Encapsulamento </h3> </div></center>
+<div class="tipo1">
+<p>Os objetos são utilizados para representas as entidades do mundo real e encapsulam
+  os dados relacionados a esses elementos. A técnica facilita a realização de testes
+  unitários, pois permite testar o comportamento dos objetos isoladamente, sem
+  depender de outros objetos ou de partes do sistema. Sem contar que pode ser usada
+  para proteger dados e métodos de uma classe de acesso indevido, impedindo a
+  violação de informações confidenciais.</p>
+  <p><li>private - os atributos e os métodos marcados como “private” só podem ser acessados dentro da propria classe que foram declarados;</li></p>
+  <p><li>protected - os atributos e os métodos marcados como "protected" podem ser acessados dentro da própria classe edas subclases;</li></p>
+  <p><li>public - os atributos e os métodos marcados como "public" podem ser acessados por qualquer classe.</li></p>
+<p></p>
+<p>Em um processo de encapsulamento os atributos das classes são do tipo private. Para acessar esses tipos de modificadores, é necessário criar métodos setters e getters. 
+ Por entendimento os métodos setters servem para alterar a informação de uma propriedade de um objeto. E os métodos getters para retornar o valor dessa propriedade.</p>
+<center><img src="./img/encapsulamento.jpg" alt=""></center>
+
+<center><div class="w3-container">
+  <button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-black">Exemplo</button>
+
+  <div id="id04" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p></p>
+        <center><img src="./img/encapsulamento2.jpg" ></center>
+      </div>
+    </div>
+  </div>
+</div></center>
+</div>
+
+</body>
+</html>

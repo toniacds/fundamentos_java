@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body background="./img/fundo.jpg">
+   <center> <h1 class="tipo2"> Serialização </h1> 
+    <div class="tipo1">
+    <p>Serialização é quando um objeto é transformando em uma cadeia de bytes, tornando sua manipulação mais fácil, seja através de transporte pela rede ou salvo no disco. Depois essa transmissão ou cadeia de bytes pode ser transformada novamente no objeto Java que a originou.</p>
+    <p>Sendo assim a serialização “congela” (salva, grava, captura) o estado do seu objeto o guardando por um tempo indeterminado. Quando você quiser “descongelar” esse objeto e usá-lo com seu último estado gravado.</p>
+    <p>Vale ressaltar, que a serialização trabalha apenas com atributos de instância de uma classe, não incluindo os atributos estáticos. Outro detalhe importante da serialização é que se o objeto a ser serializado for proveniente de uma subclasse, todos os atributos de instancia, mesmos aqueles originários de superclasses, serão serializados. Também se um objeto contiver referências de outros objetos, todas as referências serão serializadas.</p>
+    <p>Para o arquivo passar pelo processo de serialização a classe deve implementar a interface java.io.Serializable que sinalizará a máquina virtual Java (JVM) que objetos daquela classe estão aptos a serem serializadas. Caso não se deseje serializar algum atributo de instância específico de um determinado objeto, basta sinalizá-lo como transient, assim o objeto serializado não conterá a informação referente a este atributo.</p>
+   
+    
+ 
+          <div class="w3-container">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Exemplo</button>
+          
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <img src="./img/exserialização.png" width="700" height="500">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+   
+
+
+</body>
+</html>
